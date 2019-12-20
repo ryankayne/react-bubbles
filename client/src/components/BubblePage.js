@@ -10,10 +10,9 @@ const BubblePage = () => {
   // fetch your colors data from the server when the component mounts
   // set that data to the colorList state property
 
-axiosWithAuth()
-  .get('/colors')
-  .then(repsonse => {
-    setColorList(repsonse.data)
+axiosWithAuth().get('/colors')
+  .then(response => {
+    setColorList(response.data)
   })
   .catch(error => {
     console.log(error)

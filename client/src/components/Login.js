@@ -27,7 +27,7 @@ const handleSubmit = e => {
     props.history.push('/bubbles')
   })
   .catch(error => {
-    console.log(error.response.data, 'There is a problem')
+    console.log(error.response.data)
   })
 }
 
